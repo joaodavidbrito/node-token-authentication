@@ -155,4 +155,5 @@ app.use('/api', apiRoutes);
 // start the server ================================================
 // =================================================================
 app.listen(port);
-console.log('Magic happens at http://localhost:' + port);
+console.log("Magic happens here at http://localhost:" + port);
+
