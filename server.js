@@ -103,7 +103,7 @@ apiRoutes.post('/authenticate', function(req, res) {
 apiRoutes.use(function(req, res, next) {
 
 	// check header or url parameters or post parameters for token
-	var token = req.body.token || req.param('token') || req.headers['x-access-token'];
+	var token = req.body.token || req.param('token') || req.headers['x-access-token'] || req.headers['Bearer'];
 
 	// decode token
 	if (token) {
